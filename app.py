@@ -13,7 +13,7 @@ from tensorflow.keras.preprocessing.image import img_to_array, load_img, array_t
 
 
 # Function to download the file from Google Drive
-@st.cache_resource()
+# @st.cache_resource()
 def download_file_from_drive(url, output):
     gdown.download(url, output, quiet=False)
 
