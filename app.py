@@ -16,6 +16,8 @@ from tensorflow.keras.preprocessing.image import img_to_array, load_img, array_t
 # @st.cache_resource()
 def download_file_from_drive(url, output):
     gdown.download(url, output, quiet=False)
+# To clear the resource 
+download_file_from_drive.clear()
 
 # opening the image
 # image = open('banner_image.jpeg', 'rb').read()
