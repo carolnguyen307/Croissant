@@ -29,7 +29,10 @@ st.markdown("---")
 
 
 # Load the trained model
-model = load_model('model.h5')
+#model = load_model('model.h5')
+# Google Drive file link (shared link)
+file_url = 'https://drive.google.com/uc?1_egnP-PtljAfWAtzwVbq3d8YbFLZPDPy'
+output_file = 'model.h5'
 
 
 
