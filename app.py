@@ -12,6 +12,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array, load_img, array_to_img
 
 
+# Function to download the file from Google Drive
+def download_file_from_drive(url, output):
+    gdown.download(url, output, quiet=False)
+
 # opening the image
 # image = open('banner_image.jpeg', 'rb').read()
 # st.image(image, use_column_width=True)
