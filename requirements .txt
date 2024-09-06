@@ -7,3 +7,4 @@ tensorflow
 streamlit_webrtc
 opencv-python==4.5.5.62
 cv2
+efficientnet
