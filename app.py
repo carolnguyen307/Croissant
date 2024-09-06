@@ -1,8 +1,7 @@
 
 import streamlit as st
+import gdown
 import os
-os.environ['CV2_CUDNN_STREAM'] = '1'
-# import cv2
 import pandas as pd
 import numpy as np
 import pickle
@@ -11,9 +10,6 @@ from PIL import ImageFont, ImageDraw, Image
 #from efficientnet.tfkeras import EfficientNetB4
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array, load_img, array_to_img
-
-import gdown
-import os
 
 
 # opening the image
