@@ -2,7 +2,7 @@
 import streamlit as st
 import os
 os.environ['CV2_CUDNN_STREAM'] = '1'
-import cv2
+# import cv2
 import pandas as pd
 import numpy as np
 import pickle
