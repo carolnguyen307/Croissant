@@ -17,11 +17,13 @@ def download_file_from_onedrive(one_drive_link):
     
     # Send an HTTP request to download the file
     response = requests.get(direct_download_link)
+
+    st.write(response)
     
     # Ensure the request was successful
     if response.status_code == 200:
         # Create a temporary file
-        temp_model_file = tempfile.NamedTemporaryFile(delete=True, suffix='.h5')
+        temp_model_file = tempfile.NamedTemporaryFile(delete=False, suffix='.h5')
         # Write the content to this temp file
         temp_model_file.write(response.content)
         temp_model_file.close()
