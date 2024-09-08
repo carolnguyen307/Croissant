@@ -17,8 +17,6 @@ def download_file_from_onedrive(one_drive_link):
     
     # Send an HTTP request to download the file
     response = requests.get(direct_download_link)
-
-    st.write(response)
     
     # Ensure the request was successful
     if response.status_code == 200:
