@@ -21,7 +21,7 @@ def download_file_from_onedrive(one_drive_link):
     # Ensure the request was successful
     if response.status_code == 200:
         # Create a temporary file
-        temp_model_file = tempfile.NamedTemporaryFile(delete=False, suffix='.h5')
+        temp_model_file = tempfile.NamedTemporaryFile(delete=True, suffix='.h5')
         # Write the content to this temp file
         temp_model_file.write(response.content)
         temp_model_file.close()
@@ -37,7 +37,7 @@ st.markdown("Predict croissant quality")
 st.markdown("---")
 
 # OneDrive file link (shared link)
-file_url = 'https://1drv.ms/u/s!Ao5lMwzKXu6xhcVwBaoS50EPZ9G1cw?e=4xcIS3'
+file_url = 'https://1drv.ms/u/s!Ao5lMwzKXu6xhcVwBaoS50EPZ9G1cw?download=1'
 output_file = 'model.h5'
 
 if "model" not in st.session_state.keys():
@@ -64,8 +64,8 @@ if "model" not in st.session_state.keys():
         else:
             st.error('Error: Model file not found.')
 
-# Load the model from session state
-model = st.session_state["model"]
+    # Load the model from session state
+    model = st.session_state["model"]
 
 # Header for image upload
 st.header("Upload your image")
