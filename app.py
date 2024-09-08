@@ -37,7 +37,7 @@ st.markdown("Predict croissant quality")
 st.markdown("---")
 
 # OneDrive file link (shared link)
-file_url = 'https://1drv.ms/u/s!Ao5lMwzKXu6xhcVwBaoS50EPZ9G1cw?download=1'
+file_url = 'https://onedrive.live.com/download.aspx?cid=B1EE5ECA0C33658E&resid=B1EE5ECA0C33658E%2190864&authkey=!AAWqEudBD2fRtXM'
 output_file = 'model.h5'
 
 if "model" not in st.session_state.keys():
