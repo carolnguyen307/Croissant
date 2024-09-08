@@ -40,7 +40,8 @@ st.markdown("---")
 file_url = 'https://onedrive.live.com/download.aspx?cid=B1EE5ECA0C33658E&resid=B1EE5ECA0C33658E%2190864&authkey=!AAWqEudBD2fRtXM'
 output_file = 'model.h5'
 
-if "model" not in st.session_state.keys():
+#if "model" not in st.session_state.keys():
+if st.button("Load Model") is not None:
     # Download the model file from OneDrive
     output_file = download_file_from_onedrive(file_url)
     
