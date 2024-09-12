@@ -16,3 +16,19 @@ Yet, I couldn’t help but notice that the croissant often goes unappreciated, b
 Since I can't always be there to guide someone when they're choosing a croissant, I realized I needed to create something that could. Something that could always be with them, offering instant advice on whether that croissant is worth savoring. That’s when the idea for Croissant Connoisseur was born—a clever app designed to help anyone identify a high-quality croissant with just a snap. Users simply take a photo of the croissant they’re eyeing, and the app does the rest, analyzing key indicators like color, flakiness, and the number of visible layers. In seconds, it provides a recommendation, ensuring that each bite they take is well worth it, and helping people indulge with confidence.
 
 As buyers begin to savor the finest croissants, their appreciation for this artisanal pastry will deepen, spreading the love for the craftsmanship and care that goes into creating the perfect croissant. Over time, Croissant Connoisseur won’t just help users discover great croissants—it will also foster a genuine love and respect for the art of pastry-making.
+
+---
+
+## Problem statement
+---
+How can I design a tool that accurately determines whether the croissant a user is about to buy is high-quality or lacking?
+
+## Table of contents
+---
+1. [01_Data source]()
+2. [02_Workflow processes]()
+3. [03_Required Python libraries]()
+4. [04_Recommended visual analysis model]()
+5. [05_Future improvement]()
+6. [06_Summary]()
+
