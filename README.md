@@ -49,15 +49,15 @@ Based on the above comparison, I chose the MobileNet V2 model for app deployment
 3. Extract chosen model which is MobileNet V2 to HDF5 format so it will become ready for deployment.
 
 ### Required Python libraries
-1.keras
-2.matplotlib
-3.numpy
-4.os
-5.pandas
-6.scikit-learn or sklearn
-7.skimage
-8.tensorflow
-9.time
+1. keras
+2. matplotlib
+3. numpy
+4. os
+5. pandas
+6. scikit-learn or sklearn
+7. skimage
+8. tensorflow
+9. time
 
 ### Recommended model
 I selected the MobileNet V2 model for deployment due to its strong performance, demonstrating both high training accuracy and validation accuracy, with the smallest absolute difference between the two metrics (0.0322), indicating minimal overfitting. Additionally, MobileNet V2 had the shortest running time (54.25 seconds) among the four models evaluated, making it the most efficient choice for real-time applications.
