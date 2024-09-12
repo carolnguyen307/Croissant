@@ -24,10 +24,10 @@ How can I design a tool that accurately determines whether the croissant a user 
 
 1. [Data source](#Data-source)
 2. [Workflow processes](#Workflow-processes)
-3. [Required Python libraries]()
-4. [Recommended visual analysis model]()
-5. [Future improvement]()
-6. [Summary]()
+3. [Required Python libraries](#Required-Python-libraries)
+4. [Recommended visual analysis model](#Recommended-model)
+5. [Future improvement](#Future-improvement)
+6. [Summary](#Summary)
 
 ### Data source
 To collect the dataset of croissant images, I employed a multi-faceted approach. First, I visited several local bakeries to personally capture photographs of both high-quality and substandard croissants. In addition, my classmates contributed to the dataset by providing their own photos of croissants. Furthermore, I utilized online resources such as Google search and social media platforms, including Instagram and Facebook, to source additional images. This diverse collection process ensured a comprehensive dataset, representing a wide variety of croissant qualities and styles.
@@ -46,4 +46,27 @@ Here's a tabular comparison of the key metrics measured for 4 models mentioned a
 | EfficientNet              | 0.9846          | 0.8571                | 68.17        | 
 
 Based on the above comparison, I chose the MobileNet V2 model for app deployment.
+3. Extract chosen model which is MobileNet V2 to HDF5 format so it will become ready for deployment.
+
+### Required Python libraries
+1.keras
+2.matplotlib
+3.numpy
+4.os
+5.pandas
+6.scikit-learn or sklearn
+7.skimage
+8.tensorflow
+9.time
+
+### Recommended model
+I selected the MobileNet V2 model for deployment due to its strong performance, demonstrating both high training accuracy and validation accuracy, with the smallest absolute difference between the two metrics (0.0322), indicating minimal overfitting. Additionally, MobileNet V2 had the shortest running time (54.25 seconds) among the four models evaluated, making it the most efficient choice for real-time applications.
+
+### Future improvement
+In future work, I aim to extend the application of deep learning models like MobileNetV2 by not only classifying croissants based on quality but also analyzing their structural characteristics, such as the number of layers. By developing a model that can count the layers of a croissant and provide detailed numeric information about the average number of layers found in high-quality pastries, I hope to bring a more data-driven approach to food assessment. This could offer valuable insights into what truly defines a perfect croissant, combining both visual quality and structural consistency to ensure only the best pastries are recognized.
+
+### Summary
+In conclusion, the MobileNetV2 model demonstrated its superior ability to classify images with remarkable accuracy, making it a versatile tool for various applications, including something as unique as evaluating croissants. Just as it excelled in distinguishing between complex visual patterns in this project, MobileNetV2 can be applied to assess the quality of croissants by analyzing subtle details like texture, color, and structure. This powerful model, with its deep learning capabilities, can differentiate between a perfectly baked croissant and one that falls short of expectations. By leveraging its precision and efficiency, businesses or enthusiasts could use MobileNetV2 to ensure that only the finest croissants meet their standards, enhancing the overall food experience. Whether it's image classification or food quality assessment, MobileNetV2 stands out as a top performer, consistently delivering reliable results across a range of tasks.
+
+
 
