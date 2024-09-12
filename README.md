@@ -3,8 +3,6 @@
 
 _By Carol Nguyen_
 
----
-
 ## Introduction to Problem Statement
  
 Nearly a decade ago, I entered the world of pastry with a curious question: Why do the French have such a deep love for croissants and pastries? Is it just the sweetness and the dopamine rush that comes from eating them, or is there something more—something deeper and more meaningful that I hadn’t yet uncovered?
@@ -17,14 +15,13 @@ Since I can't always be there to guide someone when they're choosing a croissant
 
 As buyers begin to savor the finest croissants, their appreciation for this artisanal pastry will deepen, spreading the love for the craftsmanship and care that goes into creating the perfect croissant. Over time, Croissant Connoisseur won’t just help users discover great croissants—it will also foster a genuine love and respect for the art of pastry-making.
 
----
 
 ## Problem statement
----
+
 How can I design a tool that accurately determines whether the croissant a user is about to buy is high-quality or lacking?
 
 ## Table of contents
----
+
 1. [Data source]()
 2. [Workflow processes]()
 3. [Required Python libraries]()
