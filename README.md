@@ -25,10 +25,10 @@ How can I design a tool that accurately determines whether the croissant a user 
 
 ## Table of contents
 ---
- [1_Data source]()
- [2_Workflow processes]()
- [3_Required Python libraries]()
- [4_Recommended visual analysis model]()
- [5_Future improvement]()
- [6_Summary]()
+1. [Data source]()
+2. [Workflow processes]()
+3. [Required Python libraries]()
+4. [Recommended visual analysis model]()
+5. [Future improvement]()
+6. [Summary]()
 
