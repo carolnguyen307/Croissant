@@ -22,10 +22,28 @@ How can I design a tool that accurately determines whether the croissant a user 
 
 ## Table of contents
 
-1. [Data source]()
-2. [Workflow processes]()
+1. [Data source](#Data-source)
+2. [Workflow processes](#Workflow-processes)
 3. [Required Python libraries]()
 4. [Recommended visual analysis model]()
 5. [Future improvement]()
 6. [Summary]()
+
+### Data source
+To collect the dataset of croissant images, I employed a multi-faceted approach. First, I visited several local bakeries to personally capture photographs of both high-quality and substandard croissants. In addition, my classmates contributed to the dataset by providing their own photos of croissants. Furthermore, I utilized online resources such as Google search and social media platforms, including Instagram and Facebook, to source additional images. This diverse collection process ensured a comprehensive dataset, representing a wide variety of croissant qualities and styles.
+
+### Workflow processes
+1. The workflow started off doing an exploratory visual analysis on the above data source which are images of croissants. This first stage of visual analysis gives a hint of how a good croissant looks like.
+2. Next, I implemented a range of models to classify the quality of croissants, beginning with a Baseline Convolutional Neural Network (CNN) as a binary classifier to distinguish between high-quality and substandard croissants. After achieving an train accuracy of 1.0 and validation accuracy of 0.61904, I expanded the task to a multiclass classification problem to categorize different levels of croissant quality. I then applied more advanced models, including VGG-16, MobileNet V2, and EfficientNet, with MobileNet V2 achieving the highest performance with train accuracy of 0.9846, validation accuracy of 0.9524 with lowest running time among other models with 54.2478 second.
+
+Here's a tabular comparison of the key metrics measured for 4 models mentioned above:
+
+| Model                     | Train Accuracy	 | Validation Accuracy	  | Run Time (s) |
+|---------------------------|-----------------|-----------------------|--------------|
+| Baseline CNN              | 1.0000          | 0.6190                | 56.71        | 
+| VGG-16                    | 1.0000          | 0.9524                | 494.72       | 
+| MobileNet V2              | 0.9846          | 0.9524                | 54.25        | 
+| EfficientNet              | 0.9846          | 0.8571                | 68.17        | 
+
+Based on the above comparison, I chose the MobileNet V2 model for app deployment.
 
